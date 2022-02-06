@@ -23,6 +23,9 @@ jobs:
 
       - uses: r-lib/actions/setup-pandoc@master
 
+      - name: Install curl headers
+        run: sudo apt-get install libcurl4-openssl-dev
+
       - uses: r-lib/actions/setup-renv@v2
 
       - name: Scrape data
