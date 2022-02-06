@@ -4,3 +4,9 @@
   description: ~
   rows: 156
   cols: 11
+- path: tidytuesday-tweets_2022-02-06
+  name: tidytuesday-tweets_2022-02-06
+  type: table
+  description: ~
+  rows: 156
+  cols: 11
