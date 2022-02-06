@@ -38,7 +38,7 @@ tidytuesday_tweets <- tidytuesday_tweets %>%
   mutate(
     created_at =  strptime(created_at,
                            "%a %b %d %H:%M:%S +0000 %Y", tz = "UTC"),
-    tweet_url = paste0("https://twitter.com/", screen_name, "/status/", id_str)
+    tweet_url = paste0("https://twitter.com/", screen_name, "/status/", id)
   ) %>%
   arrange(desc(favorite_count))
 
@@ -50,5 +50,5 @@ board <- board_register_github(
   path = "data", token = Sys.getenv("GITHUB_PAT")
 )
 
-pin(tidytuesday_tweets, name = paste0("tidytuesday-tweets_", Sys.date()),
+pin(tidytuesday_tweets, name = paste0("tidytuesday-tweets_", Sys.Date()),
     board = "tidytuesday-tweets")
