@@ -14,5 +14,5 @@
   name: tidytuesday-tweets
   type: table
   description: ~
-  rows: 244
-  cols: 11
+  rows: 252
+  cols: 13

@@ -2,8 +2,8 @@ path:
 - data.csv
 - data.rds
 type: table
-rows: 244
-cols: 11
+rows: 252
+cols: 13
 columns:
   created_at: POSIXct
   id: character
@@ -11,6 +11,8 @@ columns:
   retweet_count: numeric
   favorite_count: numeric
   images: list
+  possibly_sensitive: logical
+  possibly_sensitive_appealable: logical
   name: character
   screen_name: character
   followers_count: integer
