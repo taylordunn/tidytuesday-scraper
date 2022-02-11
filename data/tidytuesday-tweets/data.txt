@@ -1,0 +1,21 @@
+path:
+- data.csv
+- data.rds
+type: table
+rows: 244
+cols: 11
+columns:
+  created_at: POSIXct
+  id: character
+  full_text: character
+  retweet_count: numeric
+  favorite_count: numeric
+  images: list
+  name: character
+  screen_name: character
+  followers_count: integer
+  verified: logical
+  tweet_url: character
+filenames:
+  data.csv: data.csv
+  data.rds: data.rds

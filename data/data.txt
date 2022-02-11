@@ -10,3 +10,9 @@
   description: ~
   rows: 149
   cols: 11
+- path: tidytuesday-tweets
+  name: tidytuesday-tweets
+  type: table
+  description: ~
+  rows: 244
+  cols: 11
