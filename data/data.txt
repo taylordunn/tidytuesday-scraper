@@ -1,15 +1,3 @@
-- path: tidytuesday-tweets_2022-02-06
-  name: tidytuesday-tweets_2022-02-06
-  type: table
-  description: ~
-  rows: 156
-  cols: 11
-- path: tidytuesday-tweets_2022-02-11
-  name: tidytuesday-tweets_2022-02-11
-  type: table
-  description: ~
-  rows: 149
-  cols: 11
 - path: tidytuesday-tweets
   name: tidytuesday-tweets
   type: table
