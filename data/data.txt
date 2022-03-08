@@ -2,5 +2,5 @@
   name: tidytuesday-tweets
   type: table
   description: ~
-  rows: 563
+  rows: 589
   cols: 13
