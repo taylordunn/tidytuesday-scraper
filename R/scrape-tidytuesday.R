@@ -3,6 +3,8 @@ library(dplyr)
 library(purrr)
 library(pins)
 
+source("R/functions.R")
+
 # Authenticate ------------------------------------------------------------
 
 auth <- rtweet_bot(
@@ -55,7 +57,8 @@ tidytuesday_tweets <- tidytuesday_tweets %>%
   bind_rows(
     tidytuesday_tweets_old %>% filter(!(id %in% tidytuesday_tweets$id))
   ) %>%
-  arrange(created_at)
+  arrange(created_at) %>%
+  mutate(tweet_embedded = map(id, embed_tweet))
 
 pin(tidytuesday_tweets,
     name = "tidytuesday-tweets", board = "tidytuesday-tweets")
