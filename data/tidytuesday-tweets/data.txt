@@ -2,7 +2,7 @@ path:
 - data.csv
 - data.rds
 type: table
-rows: 4048
+rows: 4087
 cols: 14
 columns:
   created_at: POSIXct
